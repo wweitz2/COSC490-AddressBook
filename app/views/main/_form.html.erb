@@ -1,0 +1,8 @@
+<%=form_for :address, :url=>{:action=>"edit", :id=>@address.id} do |f|%>
+    Name: <%=f.text_field(:name) %><br/>
+    Address: <%=f.text_field(:address) %><br/>
+    Email: <%=f.email_field(:email) %><br/>
+    Phone: <%=f.telephone_field(:phone) %><br/>
+    Birthday: <%=f.date_field(:birthday) %><br/>
+    <%=submit_tag "Update"%>
+<%end%>
