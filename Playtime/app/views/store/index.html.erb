@@ -7,4 +7,12 @@
       <%= sanitize(product.description) %> <div class="price_line">
       <span class="price"><%= number_to_currency(product.price) %></span> </div>
     </div>
+    <p>Stock in store:<%= (product.in_store_stock) %></p>
+    <% if product.in_store_stock == 0 %>
+        <div>Available online only</div>
+    <% end %>
+    <p>Stock online:<%= (product.online_stock) %>
+      <% if product.online_stock == 0 %>
+        <div>Available in store only</div>
+    <% end %>
 <% end %>

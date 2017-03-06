@@ -15,16 +15,22 @@ Product.create(title: 'Item 1',
         you should add Ruby to your toolbox.
       </p>},
                image_url: 'ruby.jpg',
-               price: 49.95)
+               price: 49.95,
+                in_store_stock: 1,
+                online_stock: 0)
 Product.create(title: 'Item 2',
                description: %{<p>
         Rails is a server-side web application framework written in Ruby under the MIT License.
       </p>},
                image_url: 'rails.png',
-               price: 38.3)
+               price: 38.3,
+               in_store_stock: 0,
+               online_stock: 0)
 Product.create(title: 'Item 3',
                description: %{<p>
         Computer science is the study of the theory, experimentation, and engineering that form the basis for the design and use of computers.
       </p>},
                image_url: 'cs.jpg',
-               price: 12.3)
+               price: 12.3,
+               in_store_stock: 1,
+               online_stock: 1)
